@@ -7,6 +7,8 @@ def order_some_pizzas(number_of_pizzas, time, money):
     # lets do a lot of work here
     print("Let's order some pizzas.")
     pizzaria = Pizzaria("Mario")
+    menu = pizzaria.get_menu()
+    # user interaction
     pizzas = pizzaria.order_pizzas(number_of_pizzas, time, money)
     return pizzas
 

@@ -9,18 +9,19 @@ class Pizzaria:
         # fixture
         menu =  [
             {   "name": "Pereroni",
-                "price": 8.50
+                "price": 8.50,
                 "type": "Pizza"
             },
             {
                 "name": "Calzone",
-                "price": 11.75
+                "price": 11.75,
                 "type": "Pizza"
             }
         ]
         return menu
 
     def order_pizzas(self, numbers_of_pizzas, time, money):
+        print("First checking the amount of money")
         if money <= 0.0:
             raise Exception("Not enough money!")
 
